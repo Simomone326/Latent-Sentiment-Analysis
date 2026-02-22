@@ -21,7 +21,7 @@ For any given input, the hidden states ($h$) are extracted from every layer of t
 The detection of underlying sentiment, especially in the presence of sarcasm or system-prompt constraints, is achieved through the computation of Steering Vectors (or Concept Activation Vectors) via a purification method:
 
 * **Global Centroid ($\mu_{global}$)**: The mean vector of all provided emotional samples across all categories is calculated. This centroid represents the "baseline emotional sentence," capturing syntactic and structural features common across all samples.
-* **Direction Isolation**: For a specific emotion (e.g., Joy), the local mean vector ($\mu_{emotion}$) is computed. The final steering vector ($\vec{v}_{steering}$) is isolated by subtracting the global centroid from the local mean ($\vec{v}_{steering} = \mu_{emotion} - \mu_{global}$).
+* **Direction Isolation**: For a specific emotion (e.g., Joy), the local mean vector (&mu;<sub>emotion</sub>) is computed. The final steering vector (v<sub>steering</sub>) is isolated by subtracting the global centroid from the local mean (v<sub>steering</sub> = &mu;<sub>emotion</sub> - &mu;<sub>global</sub>).
   
 This subtraction effectively cancels out shared features (such as common sentence starters or general emotional intensity) to isolate the specific direction in the latent space corresponding to a unique semantic concept.
 
