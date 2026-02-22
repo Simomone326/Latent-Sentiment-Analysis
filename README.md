@@ -103,7 +103,7 @@ This class facilitates the comparison of live model generations against the pre-
 
 ## Example Use Case in Colab
 
-These cells can be used in Colab to get an idea of how to use this library. 
+These cells can be used in Colab to get an idea of how to use this library. You have to paste the code in LatentSentimentAnalysis.py as the first cell.
 Note: I found out through trial and error that, for this model, layer 16 seems to work best, but it depends on the model. You can check which layer works best by putting the last cell inside a for loop
 
 ```python
